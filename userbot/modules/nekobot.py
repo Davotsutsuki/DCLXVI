@@ -134,7 +134,7 @@ async def trump(event):
     await purge()
 
 
-@register(outgoing=True, pattern=r"^\.qg(?: |$)(.*)")
+@register(outgoing=True, pattern=r"^\.id(?: |$)(.*)")
 async def qg(event):
     text = event.pattern_match.group(1)
     text = re.sub("&", "", text)
@@ -149,7 +149,7 @@ async def qg(event):
             return
     await event.edit("`Requesting QoryGore to tweet...`")
     text = deEmojify(text)
-    img = await qorygore(text)
+    img = await crypto_id(text)
     await event.client.send_file(event.chat_id, img, reply_to=reply_to_id)
     await event.delete()
     await purge()
