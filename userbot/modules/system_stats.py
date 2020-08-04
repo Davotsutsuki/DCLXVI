@@ -22,6 +22,7 @@ from userbot.events import register
 
 # ================= CONSTANT =================
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
+modules = CMD_HELP
 # ============================================
 
 
@@ -199,21 +200,20 @@ async def pipcheck(pip):
         await pip.edit("`Use .help pip to see an example`")
 
 
-@register(outgoing=True, pattern=r"^\.(?:alive|on)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.alive$")
 async def amireallyalive(alive):
     """ For .on command, check if the bot is running.  """
     uptime = await get_readable_time((time.time() - StartTime))
     img = IMG
     caption = (
-        "`"
-        "I'm alive, at your services....\n"
-        f"-------------------------------\n"
-        f"👤 User             : {DEFAULTUSER}\n\n"
-        f"🐍 Python           : {python_version()}\n\n"
-        f"💻 Telethon version : {version.__version__}\n\n"
-        f"🕒 Bot Uptime       : {uptime}\n"
-        f"-------------------------------\n"
-        "`"
+        f"P̸r̸o̸j̸e̸c̸t̸N̸w̸F̸ I̸s̸ R̸u̸n̸n̸i̸n̸g̸!\n"
+        f"┏━━━━━━━━━━━━━━━━━\n"
+        f"┣[`👤 User  : {DEFAULTUSER} `\n"
+        f"┣[`🐍 Python  : v{python_version()} `\n"
+        f"┣[`⚙️ Telethon : v{version.__version__} `\n"
+        f"┣[`🕒 Uptime  : {uptime} \n`"
+        f"┣[`📱 Modules  : {len(modules)} `\n"
+        f"┗━━━━━━━━━━━━━━━━━\n"
     )
     await bot.send_file(alive.chat_id, img, caption=caption)
     await alive.delete()
