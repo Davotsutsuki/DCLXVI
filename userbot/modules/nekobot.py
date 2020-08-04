@@ -77,7 +77,7 @@ async def kannagen(text):
 
 async def qorygore(text):
     r = requests.get(
-        f"https://nekobot.xyz/api/imagegen?type=tweet&text={text}&username=QoryGore"
+        f"https://nekobot.xyz/api/imagegen?type=tweet&text={text}&username=crypto_id"
     ).json()
     geng = r.get("message")
     kapak = url(geng)
@@ -232,8 +232,8 @@ CMD_HELP.update(
         "\nUsage: Create tweet with custom username.\n\n"
         ">`.trump` <tweet>"
         "\nUsage: Create tweet for Donald Trump.\n\n"
-        ">`.qg` <tweet>"
-        "\nUsage: Create tweet for `@QoryGore`.\n\n"
+        ">`.id` <tweet>"
+        "\nUsage: Create tweet for `@crypto_id`.\n\n"
         ">`.cmm` <text>"
         "\nUsage: Create banner for Change My Mind.\n\n"
         ">`.kanna` <text>"
