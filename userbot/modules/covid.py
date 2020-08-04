@@ -17,14 +17,14 @@ async def corona(event):
     try:
         country_data = covid.get_status_by_country_name(country)
         output_text = (
-            f"`Confirmed   : {country_data['confirmed']}`\n" +
-            f"`Active      : {country_data['active']}`\n" +
-            f"`Meninggal      : {country_data['deaths']}`\n" +
-            f"`Recovered   : {country_data['recovered']}`\n\n" +
-            f"`New Cases   : {country_data['new_cases']}`\n" +
-            f"`New Deaths  : {country_data['new_deaths']}`\n" +
-            f"`Critical    : {country_data['critical']}`\n" +
-            f"`Total Tests : {country_data['total_tests']}`\n\n" +
+            f"`Dikonfirmasi`   : `{country_data['confirmed']}`\n" +
+            f"`Active`      : `{country_data['active']}`\n" +
+            f"`Meninggal`      : `{country_data['deaths']}`\n" +
+            f"`Sembuh`   : `{country_data['recovered']}`\n\n" +
+            f"`Kasus Baru`   : `{country_data['new_cases']}`\n" +
+            f"`Baru Meninggal`  : `{country_data['new_deaths']}`\n" +
+            f"`Critical`    : `{country_data['critical']}`\n" +
+            f"`Total Test` : `{country_data['total_tests']}`\n\n" +
             f"`Data Covid Di Indonesia`")
         await event.edit(f"Corona Virus Info in {country}:\n\n{output_text}")
     except ValueError:
