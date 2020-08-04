@@ -134,7 +134,7 @@ async def trump(event):
     await purge()
 
 
-@register(outgoing=True, pattern=r"^\.id(?: |$)(.*)")
+@register(outgoing=True, pattern=r"^\.crypto(?: |$)(.*)")
 async def qg(event):
     text = event.pattern_match.group(1)
     text = re.sub("&", "", text)
@@ -232,7 +232,7 @@ CMD_HELP.update(
         "\nUsage: Create tweet with custom username.\n\n"
         ">`.trump` <tweet>"
         "\nUsage: Create tweet for Donald Trump.\n\n"
-        ">`.id` <tweet>"
+        ">`.crypto` <tweet>"
         "\nUsage: Create tweet for `@crypto_id`.\n\n"
         ">`.cmm` <text>"
         "\nUsage: Create banner for Change My Mind.\n\n"
