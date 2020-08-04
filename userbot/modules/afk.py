@@ -94,7 +94,7 @@ async def mention_afk(mention):
                 if AFKREASON:
                     await mention.reply(
                         "🅂🄰🅈🄰 🄻🄰🄶🄸 🄾🄵🄵"
-                        f"\n𝗞𝗮𝗿𝗲𝗻𝗮 : `{AFKREASON}`."
+                        f"\n𝗞𝗮𝗿𝗲𝗻𝗮 : `{AFKREASON}`"
                         f"\n**AFK Sejak** : {afk_str}"
                     )
                 else:
@@ -106,8 +106,8 @@ async def mention_afk(mention):
                     if AFKREASON:
                         await mention.reply(
                             "🅂🄰🅈🄰 🄻🄰🄶🄸 🄾🄵🄵"
-                            f"\n𝗞𝗮𝗿𝗲𝗻𝗮: `{AFKREASON}`."
-                            f"\**nAFK Sejak**: {afk_str}"
+                            f"\n𝗞𝗮𝗿𝗲𝗻𝗮: `{AFKREASON}`"
+                            f"\n**AFK Sejak**: {afk_str}"
                         )
                     else:
                         await mention.reply(str(choice(AFKSTR)))
