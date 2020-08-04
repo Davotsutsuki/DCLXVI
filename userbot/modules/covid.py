@@ -19,13 +19,13 @@ async def corona(event):
         output_text = (
             f"`Confirmed   : {country_data['confirmed']}`\n" +
             f"`Active      : {country_data['active']}`\n" +
-            f"`Deaths      : {country_data['deaths']}`\n" +
+            f"`Meninggal      : {country_data['deaths']}`\n" +
             f"`Recovered   : {country_data['recovered']}`\n\n" +
             f"`New Cases   : {country_data['new_cases']}`\n" +
             f"`New Deaths  : {country_data['new_deaths']}`\n" +
             f"`Critical    : {country_data['critical']}`\n" +
             f"`Total Tests : {country_data['total_tests']}`\n\n" +
-            f"Data provided by [Worldometer](https://www.worldometers.info/coronavirus/country/{country})")
+            f"`Data Covid Di Indonesia`")
         await event.edit(f"Corona Virus Info in {country}:\n\n{output_text}")
     except ValueError:
         await event.edit(
