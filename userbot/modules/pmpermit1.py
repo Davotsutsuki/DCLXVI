@@ -11,7 +11,7 @@ Wiki
 Security
 Insights
 Settings
-DCLXVI/userbot/modules/pmpermit.py
+DCLXVI/userbot/modules/pmpermit1.py
 @Davotsutsuki
 Davotsutsuki Update pmpermit.py
  19 contributors
