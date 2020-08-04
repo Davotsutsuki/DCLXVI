@@ -75,7 +75,7 @@ async def kannagen(text):
     return "gpx.webp"
 
 
-async def qorygore(text):
+async def crypto_id(text):
     r = requests.get(
         f"https://nekobot.xyz/api/imagegen?type=tweet&text={text}&username=crypto_id"
     ).json()
