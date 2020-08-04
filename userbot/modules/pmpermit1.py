@@ -44,7 +44,7 @@ UNAPPROVED_MSG1 = (
     "`Hei Jangan Di Spam\n\n`"
     "`I haven't approved you to PM yet.`"
     "`Please wait for me to look in, I mostly approve PMs.\n\n`"
-    "`Until then, please don't spam my Mastor's PM, you'll get blocked and reported if you do so!`"
+    "`As then, please don't spam my Mastor's PM, you'll get blocked and reported if you do so!`"
 )
 # =================================================================
 
