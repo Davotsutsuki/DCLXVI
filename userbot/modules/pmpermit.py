@@ -23,9 +23,9 @@ from userbot.events import register
 # ========================= CONSTANTS ============================
 UNAPPROVED_MSG = (
     "`Hei Jangan Di Spam\n\n`"
-    "`I haven't approved you to PM yet.`"
-    "`Please wait for me to look in, I mostly approve PMs.\n\n`"
-    "`Until then, please don't spam my Mastor's PM, you'll get blocked and reported if you do so!`"
+    "`Tunggu Tuannya Setujui.`"
+    "`Spam Auto Block\n\n`"
+    "`Bot Anti Spam Chat🤖`"
 )
 # =================================================================
 
@@ -173,7 +173,7 @@ async def notifon(non_event):
     await non_event.edit("`Notifications from unapproved PM's unmuted!`")
 
 
-@register(outgoing=True, pattern=r"^\.approve$")
+@register(outgoing=True, pattern=r"^\.setujui$")
 async def approvepm(apprvpm):
     """ For .approve command, give someone the permissions to PM you. """
     try:
