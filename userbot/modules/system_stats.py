@@ -206,7 +206,7 @@ async def amireallyalive(alive):
     uptime = await get_readable_time((time.time() - StartTime))
     img = IMG
     caption = (
-        f"P̸r̸o̸j̸e̸c̸t̸N̸w̸F̸ I̸s̸ R̸u̸n̸n̸i̸n̸g̸!\n"
+        f"☆꧁༒Bot Aktif༒꧂☆\n"
         f"┏━━━━━━━━━━━━━━━━━\n"
         f"┣[`👤 User  : {DEFAULTUSER} `\n"
         f"┣[`🐍 Python  : v{python_version()} `\n"
