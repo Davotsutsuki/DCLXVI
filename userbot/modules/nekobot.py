@@ -149,7 +149,7 @@ async def qg(event):
             return
     await event.edit("`Requesting QoryGore to tweet...`")
     text = deEmojify(text)
-    img = await crypto_id(text)
+    img = await crypto(text)
     await event.client.send_file(event.chat_id, img, reply_to=reply_to_id)
     await event.delete()
     await purge()
